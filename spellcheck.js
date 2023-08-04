@@ -88,7 +88,6 @@ const spellcheckYAMLFile = (filePath) => {
 }
 
 const getYAMLFiles = (dir = '..', files = []) => {
-  // console.log('yoyoyoyoy', fs.readdirSync('../'));
   const fileList = fs.readdirSync(dir);
   fileList.map(file => {
     const filePath = `${dir}/${file}`;
